@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), 
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fade-in-up.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-primary {
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-card {
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  border: 1px solid #e5e5e5;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  border-color: #000;
+}
+
+.company-logo {
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+
+.company-logo:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.companies-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.companies-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+.companies-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.process-card {
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.process-card:hover {
+  transform: translateX(8px);
+}
+
+.gradient-blob {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  filter: blur(80px);
+  opacity: 0.3;
+}
+
+.hero-image-container {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  background: black;
+}
+
+.illustration-container {
+  background: linear-gradient(135deg, #5b58f7 0%, #3d3bdb 100%);
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-indicator {
+  animation: bounce 2s infinite;
+}
+
+.companies-title {
+  font-family: "Satoshi", "Satoshi Placeholder", sans-serif;
+  font-size: 31px;
+  font-weight: 500;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+@keyframes fadeInPerspective {
+  from {
+    opacity: 0;
+    transform: perspective(1200px) translateY(30px) rotateX(10deg);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(1200px) translateY(0) rotateX(0deg);
+  }
+}
+
+@keyframes scaleInPerspective {
+  from {
+    opacity: 0;
+    transform: perspective(1200px) scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(1200px) scale(0.9);
+  }
+}
+
+.hero-title-word {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInPerspective 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  will-change: transform, opacity;
+  transform-style: preserve-3d;
+}
+
+.hero-title-word:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.hero-title-word:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.hero-title-word:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.hero-copy-wrapper {
+  will-change: transform;
+  opacity: 0;
+  animation: fadeInPerspective 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.2s;
+  transform-style: preserve-3d;
+}
+
+.hero-image-wrapper {
+  will-change: transform, opacity;
+  opacity: 0;
+  animation: scaleInPerspective 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.7s;
+  transform-style: preserve-3d;
+}
+
+.hero-subcopy {
+  opacity: 0;
+  animation: fadeInPerspective 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.8s;
+  will-change: transform, opacity;
+  transform-style: preserve-3d;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2.5rem !important;
+  }
+
+  .companies-title {
+    font-size: 1.125rem !important;
+  }
+
+  .gradient-blob {
+    filter: blur(60px);
+  }
+
+  .hero-image-container {
+    border-radius: 16px;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .process-card:hover {
+    transform: translateX(4px);
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .hero-title {
+    font-size: 3.5rem !important;
+  }
+
+  .companies-title {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-title {
+    font-size: 5rem !important;
+  }
+
+  .companies-title {
+    font-size: 1.75rem !important;
+  }
+}
+
+/* Work Page Styles */
+.work-card {
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  border: 1px solid #e5e5e5;
+}
+
+.work-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.12);
+  border-color: #000;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
