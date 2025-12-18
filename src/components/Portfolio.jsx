@@ -104,7 +104,7 @@ const Portfolio = () => {
             </h1>
             <div className="hero-subcopy flex items-center justify-center text-[10px] sm:text-xs tracking-widest mt-4 sm:mt-6 flex-wrap gap-2 sm:gap-4 max-w-[800px] mx-auto">
               <span>{hero.location}</span>
-              <span>{hero.phone}</span>
+              <a href={`tel:${hero.phone}`} className="hover:opacity-70 transition">{hero.phone}</a>
             </div>
             <div className="flex justify-center mt-6 sm:mt-8">
               <a 
