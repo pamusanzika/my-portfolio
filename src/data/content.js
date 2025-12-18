@@ -1,13 +1,13 @@
 export const portfolioContent = {
   hero: {
     logoText: 'PAMU',
-    title: 'MOBILE  &  WEB PRODUCT DEVOLOPER',
+    title: 'MOBILE & WEB PRODUCT DEVELOPER',
     location: 'COLOMBO, SRI LANKA',
     phone: '+94 76 459 5887',
     email: 'Pamuda.info@gmail.com',
     ctaText: "LET'S BUILD.",
-    profileImage: 'src/assets/Pamuda.png',
-    illustrationImage: 'src/assets/man.png',
+    profileImage: '/Pamuda.png',
+    illustrationImage: '/man.png',
     companiesTitle: 'Worked with Stack That Powers My Builds',
     tagline: 'Turning product vision into scalable software and mobile experiences.'
   },
@@ -96,7 +96,7 @@ export const portfolioContent = {
   contact: {
     name: 'PAMUDA SANSIKA',
     email: 'Pamuda.info@gmail.com',
-    profileImage: 'src/assets/Pamuda-memoji.png',
+    profileImage: '/Pamuda-memoji.png',
     ctaTitle: "Think I'd be a good fit for your team or project?\nLet's connect.",
     copyright: '© pamuda sansika 2025',
     socials: {
@@ -115,7 +115,7 @@ export const portfolioContent = {
       year: '2025',
       category: 'Mobile & Web Development',
       description: 'A gamified fitness platform with a mobile app and website that track steps, monitor progress, and reward users for staying active.',
-      image: 'src/assets/stepchamp.png',
+      image: '/stepchamp.png',
       tags: ['React Native','React', 'Node.js', 'Web3', 'Evernode','Blockchain','Docker'],
       githubUrl: 'https://github.com/Geveo/StepChamp.Mobile'
     },
@@ -125,7 +125,7 @@ export const portfolioContent = {
       year: '2025',
     category: 'MOBILE APPLICATION',
       description: 'A fitness app that tracks workouts, monitors progress, provides a Favourite Tab for fitness tips, and motivates users to achieve their health and wellness goals effectively daily.',
-      image: 'src/assets/Fitbuddy.png',
+      image: '/Fitbuddy.png',
       tags: ['React Native', 'Firebase', 'Redux', 'API'],
       githubUrl: 'https://github.com/pamusanzika/FitBuddy'
     },
@@ -135,7 +135,7 @@ export const portfolioContent = {
       year: '2025',
       category: 'FULL STACK',
       description: 'A full-stack MERN app that lets users easily track LinkedIn profiles and view their latest posts in a centralized feed, efficiently powered by Apify’s LinkedIn Post Scraper.',
-      image: 'src/assets/Posttracker.png',
+      image: '/Posttracker.png',
       tags: ['MongoDB', 'Express.js', 'React', 'Node.js'],
       githubUrl: 'https://github.com/pamusanzika/linkedin-post-tracker'
     },
@@ -145,7 +145,7 @@ export const portfolioContent = {
       year: '2024',
       category: 'FULL STACK',
       description: 'A full-stack vehicle service management system with a modern Next.js frontend and RESTful backend, offering real-time progress tracking, appointment booking, service history, and employee job management.',
-      image: 'src/assets/Autocare.png',
+      image: '/Autocare.png',
       tags: ['React', 'Express', 'Node.js', 'MongoDB','Docker'],
       liveUrl: 'https://auto-mobile-system-fe.vercel.app/',
       githubUrl: 'https://github.com/mrcentimetre/AutoMobile-System-FE'
@@ -156,7 +156,7 @@ export const portfolioContent = {
       year: '2024',
       category: 'WEB DEVELOPMENT',
       description: 'A modern, responsive website showcasing Artra Magazine’s articles, news, and features with an engaging UI, easy navigation, and optimized reading experience across all devices.',
-      image: 'src/assets/ARTRA.png',
+      image: '/Artra.png',
       tags: ['Figma', 'WordPress', 'Woocommerce', 'CMS'],
       liveUrl: 'https://www.artra.lk/',
       githubUrl: ''
@@ -167,7 +167,7 @@ export const portfolioContent = {
       year: '2024',
       category: 'UI DESIGN',
       description: 'A modern and intuitive UI design for a university sports platform, showcasing schedules, results, and athlete information with a clean, responsive, and engaging interface.',
-      image: 'src/assets/MORA.png',
+      image: '/Mora.png',
       tags: ['Figma', 'UI Design', 'Prototyping'],
       liveUrl: 'https://www.figma.com/design/4VvX7zDybGimXmXdZAOgo4/MoraSpriti360?node-id=0-1&t=t871mRYwBGzdM3TQ-1',
     }
